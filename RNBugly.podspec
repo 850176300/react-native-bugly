@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.ios.frameworks    = "SystemConfiguration", "Security"
   s.ios.library = 'z', 'c++'
 
+  s.staic_framework = true
   s.dependency "Bugly"
 
   #s.dependency "React"

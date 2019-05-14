@@ -10,11 +10,11 @@
 }
 RCT_EXPORT_MODULE()
 
-+ (void)startWithAppId
++ (void)startWithAppId:(NSString*)appId;
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [Bugly startWithAppId:nil];
+        [Bugly startWithAppId:appId];
     });
 }
 
